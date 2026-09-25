@@ -123,6 +123,8 @@ platformio.ini
 src/main.cpp
 src/config.h
 README.md
+LICENSE
+THIRD_PARTY_LICENSES.md
 ```
 
 ## GASの設定
@@ -316,3 +318,19 @@ Could not open COMx, the port is busy or doesn't exist.
 - ESP32 Arduino標準の `WiFi`, `HTTPClient`, `Wire`
 
 BSEC や BME680 専用ライブラリは使わず、ESP32標準 + AHT20/BMP280 ライブラリのみで構成されています。
+
+## ライセンス
+
+このプロジェクトでTake-pachi-pachiが作成したソースコードは、ルートの
+[LICENSE](LICENSE)に記載した独自の非商用ライセンスで公開します。私的利用、改変、
+無償での共有は許可しますが、販売、広告収益を伴う利用、有償サービスや商用製品への
+組み込みなどの商用利用は許可しません。商用利用にはTake-pachi-pachiの事前の書面に
+よる許可が必要です。再配布時はライセンス文と著作権表示を保持してください。
+
+PlatformIOで取得するU8g2、Adafruit AHTX0、Adafruit BMP280 Library、Adafruit BusIO、
+Adafruit Unified Sensor、Adafruit GFX Library、Adafruit SH110X、およびESP32 Arduino
+frameworkは、それぞれの著作権表示とライセンス条件に従います。依存ライブラリの一覧と
+注意事項は[THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)にまとめています。
+
+ライセンス対象はTake-pachi-pachiが作成した自作コードです。第三者ライブラリや
+ESP32 Arduino frameworkには、このプロジェクトの非商用条件は適用されません。
