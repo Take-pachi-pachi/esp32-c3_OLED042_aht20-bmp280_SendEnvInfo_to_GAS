@@ -238,8 +238,22 @@ void loop() {
   }
 
   if (DEBUG_MODE) {
+    struct tm currentTime;
+    const bool hasCurrentTime = getLocalTime(&currentTime, 100);
+
     Serial.println();
     Serial.println("--- Sensor data ---");
+    if (hasCurrentTime) {
+      Serial.printf("ESP32 time: %04d-%02d-%02d %02d:%02d:%02d\n",
+                    currentTime.tm_year + 1900,
+                    currentTime.tm_mon + 1,
+                    currentTime.tm_mday,
+                    currentTime.tm_hour,
+                    currentTime.tm_min,
+                    currentTime.tm_sec);
+    } else {
+      Serial.println("ESP32 time: unavailable");
+    }
     Serial.println("Temperature:");
     Serial.printf("  AHT20 raw: %.2f C\n", ahtTemperature);
     Serial.printf("  AHT20 corrected: %.2f C\n",
