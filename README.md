@@ -129,7 +129,7 @@ THIRD_PARTY_LICENSES.md
 
 ## GASの設定
 
-詳細は https://github.com/Take-pachi-pachi/GAS_Raspi_Temp_Hum_press_IAQ/ を参照。
+詳細は https://github.com/Take-pachi-pachi/GAS_sensor-data-to-spreadsheet/ を参照。
 
 1. Googleスプレッドシートを作成します。
 2. 書き込み先のシートタブを作成します。
