@@ -1,0 +1,36 @@
+# PlatformIO build outputs
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/build/
+.pio/.cache/
+
+# Local VS Code settings
+.vscode/*
+!.vscode/extensions.json
+.clangd/
+
+# Project secrets and device-specific config
+src/config.h
+*.local
+*.secret
+.env
+.env.*
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Optional: keep release binaries or firmware out of git unless intentionally tracked
+*.bin
+*.elf
+*.hex
+*.uf2
